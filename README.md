@@ -1,6 +1,6 @@
 # 碧蓝档案 手办收集
 
-《碧蓝档案》(Blue Archive) 手办信息画廊。
+《碧蓝档案》手办信息画廊。
 碧蓝档案风格：明亮蓝白配色 + 光环图腾 + 流畅动效。
 
 **线上地址**：https://ba-figures.saveslot.xyz
@@ -8,9 +8,9 @@
 ## 信息架构
 
 ```
-/                      角色索引 —— 只列人物，每位标注有几件手办（按学校/社团分组）
-  /#/character/<id>    该角色的全部手办（可按类型细分：比例手办 / 黏土人 / figma …）
-    /#/figure/<id>     单件手办详情（大图 + 规格 + 收藏）
+/                      角色索引 —— 只列人物，每位标注有几件手办
+  /#/character/<id>    该角色的全部手办
+    /#/figure/<id>     单件手办详情
 /#/collection          我的收藏
 /#/calendar            发售日历
 /#/about               数据来源与关于
@@ -32,50 +32,50 @@ npm run preview      # http://localhost:4173
 
 > **不要双击 `dist/index.html` 打开。** Vite 产物是 `<script type="module" crossorigin>`，
 > `file://` 下浏览器会按 CORS 拒绝加载模块脚本。请用 `npm run preview` 或任意静态服务器。
-> 路由用 `HashRouter`（URL 形如 `#/figure/<id>`），静态托管到对象存储 / GitHub Pages 无需额外配置。
+> 路由用 `HashRouter`，静态托管到对象存储 / GitHub Pages 无需额外配置。
 
 ## 技术栈
 
-Vite 8 · React 19 · TypeScript 5.9 · react-router-dom 7 · motion（framer-motion）· CSS Modules + CSS 变量。
+Vite 8 · React 19 · TypeScript 5.9 · react-router-dom 7 · motion · CSS Modules + CSS 变量。
 无后端，页面侧数据全静态。
 
 ## 数据
 
-- **`src/data/figures.json`** —— 170 件手办（JAN 码 / 厂商 / 发售日 / 定价 / 商品图等）
-- **`src/data/roster.json`** —— 128 位角色权威表（中文名 / 日文名 / 学校 / 社团）
+- **`src/data/figures.json`** —— 170 件手办
+- **`src/data/roster.json`** —— 128 位角色权威表
 
-数据整理自公开站点：HLJ（HobbyLink Japan）、SchaleDB、hpoi 手办维基、Good Smile Company 官网，
+数据整理自公开站点：HLJ、SchaleDB、hpoi 手办维基、Good Smile Company 官网，
 详见站内「关于」页。商品图片版权归原厂商，仅供个人收藏检索使用。
 
 ## 图片
 
-商品图与角色立绘放在 `public/figures/`、`public/portraits/`（不入库，随部署更新）。
+商品图与角色立绘放在 `public/figures/`、`public/portraits/`。
 
-**降级**：`imageUrl` 缺失或加载失败时，自动回退成 `themeColor` 渐变占位卡
-（角色主题色 + 首字 + 光环），所以即便某张图挂了也不会出现破图图标。
+**降级**：`imageUrl` 缺失或加载失败时，自动回退成 `themeColor` 渐变占位卡，
+所以即便某张图挂了也不会出现破图图标。
 
 ## 收藏清单
 
-标记「已拥有 / 想要」存在浏览器 `localStorage`（key `ba-figures:collection:v1`），
+标记「已拥有 / 想要」存在浏览器 `localStorage`，
 不上传、不跨设备。刷新保留，导航栏计数实时同步，收藏页有件数/已花金额/按厂商与类型分布。
-坏数据（手改 localStorage、无痕模式配额满）会自动降级为空清单，不会白屏。
+坏数据会自动降级为空清单，不会白屏。
 
 ## 目录结构
 
 ```
 src/
   types/figure.ts       数据模型
-  data/figures.json     ★ 手办数据（网页唯一数据源）
+  data/figures.json     ★ 手办数据
   data/roster.json      ★ 角色权威表
   data/characters.ts    把 roster + figures 组装成页面用的角色/统计
-  lib/                  search / filters / format / stats（纯函数）
-  hooks/                useCollection（Context + localStorage）/ useSessionState 等
+  lib/                  search / filters / format / stats
+  hooks/                useCollection / useSessionState 等
   components/           layout / character / figure / filters / collection / ui
   pages/                CharacterIndex / CharacterDetail / FigureDetail / Collection / Calendar / About / NotFound
-  styles/               tokens.css（BA 蓝白色板与令牌）/ global.css
+  styles/               tokens.css / global.css
 public/
   icons/                站点图标
-  figures/  portraits/  商品图 / 立绘（gitignore，不入库）
+  figures/  portraits/  商品图 / 立绘
 ```
 
 ## 无障碍
