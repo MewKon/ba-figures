@@ -120,3 +120,21 @@
   font-weight: 700;
   font-variant-numeric: tabular-nums;
 }
+
+/* GitHub 图标链接：低调灰，hover 转品牌色并微微上浮 */
+.ghLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-left: var(--sp-2);
+  border-radius: var(--radius-pill);
+  color: var(--ink-3);
+  transition: color 0.15s, background 0.15s;
+}
+
+.ghLink:hover {
+  color: var(--ink);
+  background: var(--surface-2);
+}
