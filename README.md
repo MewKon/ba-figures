@@ -30,9 +30,7 @@ npm run build
 npm run preview      # http://localhost:4173
 ```
 
-> **不要双击 `dist/index.html` 打开。** Vite 产物是 `<script type="module" crossorigin>`，
-> `file://` 下浏览器会按 CORS 拒绝加载模块脚本。请用 `npm run preview` 或任意静态服务器。
-> 路由用 `HashRouter`，静态托管到对象存储 / GitHub Pages 无需额外配置。
+路由用 `HashRouter`，静态托管到对象存储 / GitHub Pages 无需额外配置。
 
 ## 技术栈
 
@@ -51,14 +49,10 @@ Vite 8 · React 19 · TypeScript 5.9 · react-router-dom 7 · motion · CSS Modu
 
 商品图与角色立绘放在 `public/figures/`、`public/portraits/`。
 
-**降级**：`imageUrl` 缺失或加载失败时，自动回退成 `themeColor` 渐变占位卡，
-所以即便某张图挂了也不会出现破图图标。
-
 ## 收藏清单
 
 标记「已拥有 / 想要」存在浏览器 `localStorage`，
 不上传、不跨设备。刷新保留，导航栏计数实时同步，收藏页有件数/已花金额/按厂商与类型分布。
-坏数据会自动降级为空清单，不会白屏。
 
 ## 目录结构
 
