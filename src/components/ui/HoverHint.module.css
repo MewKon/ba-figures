@@ -1,0 +1,67 @@
+.hint {
+  position: relative;
+  display: inline-flex;
+  cursor: help;
+  outline-offset: 3px;
+}
+
+/* 提示气泡：默认隐藏，hover/聚焦时浮出 */
+.tip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  width: max-content;
+  max-width: 260px;
+  padding: 7px 11px;
+  border-radius: var(--radius-sm);
+  background: #0b2033;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: left;
+  white-space: normal;
+  box-shadow: 0 8px 22px rgba(11, 32, 51, 0.32);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity var(--dur-fast) ease, transform var(--dur-fast) ease,
+    visibility var(--dur-fast) ease;
+  z-index: 60;
+}
+
+/* 小三角 */
+.tip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #0b2033;
+}
+
+.hint:hover .tip,
+.hint:focus-visible .tip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* 贴近视口左缘时气泡会溢出屏幕 —— 用 :has 或 JS 太重，直接把气泡改左对齐的兜底 */
+@media (max-width: 480px) {
+  .tip {
+    left: 0;
+    transform: translateY(4px);
+  }
+
+  .hint:hover .tip,
+  .hint:focus-visible .tip {
+    transform: translateY(0);
+  }
+
+  .tip::after {
+    left: 16px;
+  }
+}

@@ -1,0 +1,22 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+
+# 采集产物（不可信数据，可随时重跑生成）
+data/raw/
+
+# 日志
+npm-debug.log*
+yarn-error.log*
+
+# 下载的商品图（可用 npm run figures:images 重下）
+public/figures/
+
+# 下载的角色立绘（可用 npm run figures:portraits 重下）
+public/portraits/
+
+# 采集/整理脚本（含凭据逻辑，不入库）
+scripts/

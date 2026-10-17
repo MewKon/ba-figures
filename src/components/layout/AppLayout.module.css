@@ -1,0 +1,31 @@
+.shell {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* 底部一抹极淡的 BA 蓝光晕，避免整页纯白太平 */
+  background:
+    radial-gradient(120% 60% at 50% 0%, var(--ba-blue-50) 0%, transparent 55%),
+    var(--bg);
+}
+
+.main {
+  flex: 1;
+  padding-block: var(--sp-6) var(--sp-7);
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding-block: var(--sp-5);
+  font-size: 12.5px;
+  color: var(--ink-3);
+  text-align: center;
+}
+
+.footerLink {
+  color: var(--ba-blue-600);
+  font-weight: 600;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}

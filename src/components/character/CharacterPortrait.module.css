@@ -1,0 +1,84 @@
+/**
+ * 立绘舞台：固定 3/4 比例 + 主题色柔光底，
+ * 让角色卡高度完全一致（原先商品图比例各异，卡片高度会不齐）。
+ */
+.stage {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  /* 主题色柔和径向底：立绘是透明底，需要一层底色才不会"浮"在白卡上 */
+  background:
+    radial-gradient(120% 78% at 50% 108%, color-mix(in oklab, var(--c) 34%, #fff) 0%, transparent 62%),
+    linear-gradient(180deg, var(--ba-blue-50) 0%, color-mix(in oklab, var(--c) 12%, #fff) 100%);
+}
+
+/* 底部椭圆投影，把角色"放"在地面上 */
+.stage::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  width: 58%;
+  height: 5%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--c) 42%, transparent);
+  filter: blur(7px);
+  opacity: 0.42;
+  z-index: 0;
+}
+
+.img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  /* 立绘 614×1024 已接近 3/4，contain 保证任何比例都完整不裁切 */
+  object-fit: contain;
+  object-position: bottom center;
+  transition: transform var(--dur-slow) ease, opacity var(--dur-base) ease;
+  /* 未加载完先透明，避免出现半截图 */
+  opacity: 0;
+}
+
+.imgIn {
+  opacity: 1;
+}
+
+/* 加载中：光环 + 文字，图片就绪后淡出（加载很快时基本看不到） */
+.loading {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  transition: opacity var(--dur-base) ease;
+}
+
+.loadingOut {
+  opacity: 0;
+}
+
+.loadingText {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+
+.fallback {
+  aspect-ratio: 3 / 4;
+}
+
+/* 既无立绘、又无手办可作占位数据源（0 件角色且立绘加载失败）：纯主题色底 */
+.bare {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 4;
+  background:
+    radial-gradient(120% 78% at 50% 108%, color-mix(in oklab, var(--c) 34%, #fff) 0%, transparent 62%),
+    linear-gradient(180deg, var(--ba-blue-50) 0%, color-mix(in oklab, var(--c) 12%, #fff) 100%);
+}

@@ -1,0 +1,14 @@
+.head {
+  margin-bottom: var(--sp-6);
+}
+
+.title {
+  font-size: clamp(24px, 4vw, 32px);
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin-top: var(--sp-2);
+  font-size: 14px;
+  color: var(--ink-2);
+}

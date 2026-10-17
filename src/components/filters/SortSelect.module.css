@@ -1,0 +1,89 @@
+.wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.label {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-3);
+}
+
+.select {
+  appearance: none;
+  padding: 6px 30px 6px 12px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+
+.select:hover {
+  border-color: var(--ba-blue-200);
+  color: var(--ba-blue-600);
+}
+
+.select:focus-visible {
+  outline: 3px solid var(--ba-blue);
+  outline-offset: 2px;
+}
+
+.chev {
+  position: absolute;
+  right: 11px;
+  pointer-events: none;
+  color: var(--ink-3);
+}
+
+/* 筛选条：一行放多个下拉（主页用） */
+.bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-4);
+}
+
+/* 排序组：标准下拉 + 方向按钮并排 */
+.group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 方向切换：无边框无底色的纯图标钮 */
+.dirBtn {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: background var(--dur-fast) ease;
+}
+
+.dirBtn:hover {
+  background: var(--ba-blue-50);
+}
+
+/* 双箭头：当前方向实色 BA 蓝，另一方向淡灰 */
+.arrowOn {
+  fill: var(--ba-blue-600);
+  stroke: var(--ba-blue-600);
+}
+
+.arrowOff {
+  fill: var(--ink-3);
+  stroke: var(--ink-3);
+  opacity: 0.45;
+}

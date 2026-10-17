@@ -1,0 +1,63 @@
+.halo {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  pointer-events: none;
+}
+
+/* 圆环本体：椭圆环，贴近 BA 光环的扁平比例 */
+.ring,
+.glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: var(--halo-w, 2px) solid var(--ba-blue-400);
+  transform: scaleY(0.42); /* 压扁成环 */
+}
+
+.ring {
+  border-top-color: transparent; /* 留一处缺口，转动时可感知 */
+  border-right-color: transparent;
+}
+
+.glow {
+  border-color: var(--ba-blue);
+  filter: blur(4px);
+  opacity: 0.45;
+}
+
+/* -------------------------------------------------------------------------
+   自转 / 脉动：纯 CSS @keyframes，不用 motion。
+   @keyframes 里的 transform 会整条替换掉基类的 scaleY(0.42)，
+   所以动画必须补回压扁值，否则转动时光环会弹成正圆。
+   顺序必须是「先 rotate 再 scaleY」：对正圆而言 scaleY∘rotate 的结果与角度无关，
+   环始终保持 0.42 的扁平比例，只有缺口在扫动；
+   写成 rotate∘scaleY 则等于把压扁后的椭圆整体旋转，转 90° 时会被压成一条线。
+   ------------------------------------------------------------------------- */
+@keyframes haloSpin {
+  from {
+    transform: scaleY(0.42) rotate(0deg);
+  }
+  to {
+    transform: scaleY(0.42) rotate(360deg);
+  }
+}
+
+@keyframes haloPulse {
+  0%,
+  100% {
+    opacity: 0.28;
+  }
+  50% {
+    opacity: 0.72;
+  }
+}
+
+.spin {
+  animation: haloSpin 9s linear infinite;
+}
+
+.pulse {
+  animation: haloPulse 3.6s ease-in-out infinite;
+}

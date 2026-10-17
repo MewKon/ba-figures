@@ -1,0 +1,64 @@
+/* 关于页：整页居中的单栏说明 */
+.wrap {
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.block {
+  margin-top: var(--sp-5);
+}
+
+.blockTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: var(--sp-2);
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--ink-2);
+}
+
+.text p + p {
+  margin-top: var(--sp-2);
+}
+
+/* 数据来源清单：每行一条「名称 + 链接 + 说明」 */
+.sourceList {
+  display: grid;
+  gap: var(--sp-2);
+}
+
+.source {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--sp-1) var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  border-radius: var(--radius-sm);
+  background: var(--ba-blue-50);
+  font-size: 13.5px;
+}
+
+.sourceName {
+  font-weight: 700;
+  color: var(--ink);
+  flex: none;
+}
+
+.sourceLink {
+  color: var(--ba-blue-600);
+  font-weight: 600;
+}
+
+.sourceLink:hover {
+  text-decoration: underline;
+}
+
+.sourceDesc {
+  color: var(--ink-2);
+  width: 100%;
+  line-height: 1.7;
+}

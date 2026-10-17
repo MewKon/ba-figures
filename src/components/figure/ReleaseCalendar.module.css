@@ -1,0 +1,147 @@
+.wrap {
+  margin-bottom: var(--sp-7);
+}
+
+/* 左图右详情：柱形图固定宽，详情自适应；窄屏上下堆叠 */
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--sp-6);
+  align-items: start;
+}
+
+/* ---------- 左：横向柱形图 ---------- */
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--sp-3);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: calc(var(--nav-h) + 12px);
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 64px 1fr 32px;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 5px 8px;
+  border-radius: var(--radius-sm);
+  transition: background var(--dur-fast) ease;
+  text-align: left;
+}
+
+.row:hover {
+  background: var(--ba-blue-50);
+}
+
+.row.on {
+  background: var(--ba-blue-100);
+}
+
+.label {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+
+.row.on .label {
+  color: var(--ba-blue-700);
+}
+
+.year {
+  font-style: normal;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ba-blue-700);
+  padding: 0 4px;
+  border-radius: 3px;
+  background: var(--ba-blue-100);
+  line-height: 1.5;
+}
+
+.row.on .year {
+  background: var(--ba-blue);
+  color: #fff;
+}
+
+.track {
+  height: 16px;
+  border-radius: var(--radius-pill);
+  background: var(--ba-blue-50);
+  overflow: hidden;
+}
+
+.bar {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--ba-blue-400), var(--ba-blue));
+  transition: width var(--dur-base) ease;
+}
+
+.row.on .bar {
+  background: linear-gradient(90deg, var(--ba-blue), var(--ba-blue-600));
+}
+
+.count {
+  text-align: right;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 右：详情 ---------- */
+
+.detailHead {
+  margin-bottom: var(--sp-4);
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  color: var(--ink-2);
+}
+
+.detailHead strong {
+  font-size: 17px;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.note {
+  font-size: 12px;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- 窄屏：上下堆叠，柱形图不再吸顶 ---------- */
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: var(--sp-4);
+  }
+
+  .chart {
+    position: static;
+  }
+}
+
+/* 换算说明的信息符：hover 出 tooltip */
+.approx {
+  margin-left: 4px;
+  color: var(--ink-3);
+  font-size: 11.5px;
+  cursor: help;
+}

@@ -1,0 +1,122 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: var(--nav-h);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px) saturate(1.4);
+  border-bottom: 1px solid var(--line);
+}
+
+.inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-5);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.brand:hover {
+  text-decoration: none;
+}
+
+.brandHalo {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(150deg, var(--ba-blue), var(--ba-blue-600));
+  box-shadow: 0 4px 12px rgba(18, 138, 250, 0.3);
+}
+
+.brandIcon {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 5px; /* 图标自带透明边，蓝底缩进一档更协调 */
+  background: linear-gradient(150deg, rgba(79, 169, 255, 0.55), rgba(11, 107, 212, 0.45)); /* 浅一档的半透明蓝 */
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 12px rgba(18, 138, 250, 0.2);
+}
+.brandText {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  letter-spacing: -0.01em;
+}
+
+.brandText strong {
+  font-size: 17px;
+}
+
+.brandText em {
+  font-style: normal;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 8px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink-2);
+  transition: background var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+
+.link:hover {
+  background: var(--ba-blue-50);
+  color: var(--ba-blue-600);
+  text-decoration: none;
+}
+
+.active {
+  background: var(--ba-blue-100);
+  color: var(--ba-blue-700);
+}
+
+.badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: var(--radius-pill);
+  background: var(--ba-blue);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}

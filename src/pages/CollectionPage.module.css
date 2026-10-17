@@ -1,0 +1,25 @@
+/* 统计信息在左（固定窄栏），手办列表在右（自适应） */
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--sp-5);
+  align-items: start;
+}
+
+/* 统计栏吸顶，长列表滚动时保持可见 */
+/* top 需避开吸顶的顶栏(--nav-h) + 面包屑(36px)，否则滚上去会被面包屑盖住 */
+.side {
+  position: sticky;
+  top: calc(var(--nav-h) + 37px + var(--sp-3));
+}
+
+/* 窄屏退回上下排列：统计在上、列表在下 */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .side {
+    position: static;
+  }
+}

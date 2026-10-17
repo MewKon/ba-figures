@@ -1,0 +1,2026 @@
+[
+  {
+    "id": "airi",
+    "schaleId": 23000,
+    "nameZh": "栗村爱莉",
+    "nameJa": "栗村アイリ",
+    "nameEn": "Airi",
+    "school": "三一综合学园",
+    "series": "放学后甜品部",
+    "aliases": [
+      "Airi",
+      "アイリ",
+      "爱莉",
+      "Airi"
+    ],
+    "themeColor": "hsl(119 62% 58%)"
+  },
+  {
+    "id": "akane",
+    "schaleId": 13000,
+    "nameZh": "室笠茜",
+    "nameJa": "室笠アカネ",
+    "nameEn": "Akane",
+    "school": "千年科学学园",
+    "series": "C&C",
+    "aliases": [
+      "Akane",
+      "アカネ",
+      "茜",
+      "Akane"
+    ],
+    "themeColor": "hsl(30 62% 58%)"
+  },
+  {
+    "id": "akari",
+    "schaleId": 13002,
+    "nameZh": "鳄渕明里",
+    "nameJa": "鰐渕アカリ",
+    "nameEn": "Akari",
+    "school": "格黑娜学园",
+    "series": "美食研究会",
+    "aliases": [
+      "Akari",
+      "アカリ",
+      "明里",
+      "Akari"
+    ],
+    "themeColor": "hsl(158 62% 58%)"
+  },
+  {
+    "id": "ako",
+    "schaleId": 20008,
+    "nameZh": "天雨亚子",
+    "nameJa": "天雨アコ",
+    "nameEn": "Ako",
+    "school": "格黑娜学园",
+    "series": "风纪委员会",
+    "aliases": [
+      "Ako",
+      "アコ",
+      "亚子",
+      "Ako"
+    ],
+    "themeColor": "#B39DDB"
+  },
+  {
+    "id": "aris",
+    "schaleId": 10015,
+    "nameZh": "天童爱丽丝",
+    "nameJa": "天童アリス",
+    "nameEn": "Aris",
+    "school": "千年科学学园",
+    "series": "游戏开发部",
+    "aliases": [
+      "Aris",
+      "アリス",
+      "爱丽丝",
+      "Aris"
+    ],
+    "themeColor": "#6EC6FF"
+  },
+  {
+    "id": "arona",
+    "nameZh": "阿罗娜",
+    "nameJa": "アロナ",
+    "nameEn": "Arona",
+    "series": "夏莱办公室",
+    "aliases": [
+      "Arona",
+      "aluona"
+    ],
+    "themeColor": "hsl(257 62% 58%)",
+    "school": "夏莱"
+  },
+  {
+    "id": "aru",
+    "schaleId": 10000,
+    "nameZh": "陆八魔阿露",
+    "nameJa": "陸八魔アル",
+    "nameEn": "Aru",
+    "school": "格黑娜学园",
+    "series": "便利屋68",
+    "aliases": [
+      "Aru",
+      "アル",
+      "阿露",
+      "Aru"
+    ],
+    "themeColor": "#E05A5A"
+  },
+  {
+    "id": "asuna",
+    "schaleId": 16001,
+    "nameZh": "一之濑明日奈",
+    "nameJa": "一之瀬アスナ",
+    "nameEn": "Asuna",
+    "school": "千年科学学园",
+    "series": "C&C",
+    "aliases": [
+      "Asuna",
+      "アスナ",
+      "明日奈",
+      "Asuna"
+    ],
+    "themeColor": "#FFB84D"
+  },
+  {
+    "id": "atsuko",
+    "schaleId": 10042,
+    "nameZh": "秤亚津子",
+    "nameJa": "秤アツコ",
+    "nameEn": "Atsuko",
+    "school": "阿里乌斯分校",
+    "series": "阿里乌斯小队",
+    "aliases": [
+      "Atsuko",
+      "アツコ",
+      "亚津子",
+      "Atsuko"
+    ],
+    "themeColor": "hsl(241 62% 58%)"
+  },
+  {
+    "id": "ayane",
+    "schaleId": 23005,
+    "nameZh": "奥空绫音",
+    "nameJa": "奥空アヤネ",
+    "nameEn": "Ayane",
+    "school": "阿拜多斯高级中学",
+    "series": "对策委员会",
+    "aliases": [
+      "Ayane",
+      "アヤネ",
+      "绫音",
+      "Ayane"
+    ],
+    "themeColor": "hsl(224 62% 58%)"
+  },
+  {
+    "id": "azusa",
+    "schaleId": 10019,
+    "nameZh": "白洲梓",
+    "nameJa": "白洲アズサ",
+    "nameEn": "Azusa",
+    "school": "三一综合学园",
+    "series": "补课部",
+    "aliases": [
+      "Azusa",
+      "アズサ",
+      "梓",
+      "Azusa"
+    ],
+    "themeColor": "hsl(66 62% 58%)"
+  },
+  {
+    "id": "cherino",
+    "schaleId": 10017,
+    "nameZh": "连河切里诺",
+    "nameJa": "連河チェリノ",
+    "nameEn": "Cherino",
+    "school": "红冬联邦学园",
+    "series": "红冬事务局",
+    "aliases": [
+      "Cherino",
+      "チェリノ",
+      "切里诺",
+      "Cherino"
+    ],
+    "themeColor": "hsl(248 62% 58%)"
+  },
+  {
+    "id": "chiaki",
+    "nameZh": "元宫千秋",
+    "nameJa": "元宮チアキ",
+    "nameEn": "Motomiya Chiaki",
+    "school": "格黑娜学园",
+    "series": "万魔殿",
+    "aliases": [
+      "Chiaki",
+      "チアキ",
+      "千秋",
+      "元宫千秋",
+      "Motomiya Chiaki"
+    ],
+    "themeColor": "hsl(195 62% 58%)"
+  },
+  {
+    "id": "chihiro",
+    "schaleId": 20013,
+    "nameZh": "各务千寻",
+    "nameJa": "各務チヒロ",
+    "nameEn": "Chihiro",
+    "school": "千年科学学园",
+    "series": "真理会",
+    "aliases": [
+      "Chihiro",
+      "チヒロ",
+      "千寻",
+      "Chihiro"
+    ],
+    "themeColor": "hsl(306 62% 58%)"
+  },
+  {
+    "id": "chinatsu",
+    "schaleId": 26000,
+    "nameZh": "火宫千夏",
+    "nameJa": "火宮チナツ",
+    "nameEn": "Chinatsu",
+    "school": "格黑娜学园",
+    "series": "风纪委员会",
+    "aliases": [
+      "Chinatsu",
+      "チナツ",
+      "千夏",
+      "Chinatsu"
+    ],
+    "themeColor": "#7ED8E0"
+  },
+  {
+    "id": "chise",
+    "schaleId": 13001,
+    "nameZh": "和乐千世",
+    "nameJa": "和楽チセ",
+    "nameEn": "Chise",
+    "school": "百鬼夜行联合学园",
+    "series": "阴阳部",
+    "aliases": [
+      "Chise",
+      "チセ",
+      "千世",
+      "Chise"
+    ],
+    "themeColor": "hsl(102 62% 58%)"
+  },
+  {
+    "id": "eimi",
+    "schaleId": 10001,
+    "nameZh": "和泉元艾米",
+    "nameJa": "和泉元エイミ",
+    "nameEn": "Eimi",
+    "school": "千年科学学园",
+    "series": "特异现象调查部",
+    "aliases": [
+      "Eimi",
+      "エイミ",
+      "艾米",
+      "Eimi"
+    ],
+    "themeColor": "hsl(328 62% 58%)"
+  },
+  {
+    "id": "fubuki",
+    "schaleId": 16008,
+    "nameZh": "合欢垣吹雪",
+    "nameJa": "合歓垣フブキ",
+    "nameEn": "Fubuki",
+    "school": "瓦尔基里警察学校",
+    "series": "生活安全局",
+    "aliases": [
+      "Fubuki",
+      "フブキ",
+      "吹雪",
+      "Fubuki"
+    ],
+    "themeColor": "hsl(104 62% 58%)"
+  },
+  {
+    "id": "fuuka",
+    "schaleId": 23001,
+    "nameZh": "爱清枫香",
+    "nameJa": "愛清フウカ",
+    "nameEn": "Fuuka",
+    "school": "格黑娜学园",
+    "series": "供餐部",
+    "aliases": [
+      "Fuuka",
+      "フウカ",
+      "枫香",
+      "Fuuka"
+    ],
+    "themeColor": "hsl(148 62% 58%)"
+  },
+  {
+    "id": "hanae",
+    "schaleId": 23002,
+    "nameZh": "朝颜花江",
+    "nameJa": "朝顔ハナエ",
+    "nameEn": "Hanae",
+    "school": "三一综合学园",
+    "series": "救护骑士团",
+    "aliases": [
+      "Hanae",
+      "ハナエ",
+      "花江",
+      "Hanae"
+    ],
+    "themeColor": "hsl(177 62% 58%)"
+  },
+  {
+    "id": "hanako",
+    "schaleId": 23007,
+    "nameZh": "浦和花子",
+    "nameJa": "浦和ハナコ",
+    "nameEn": "Hanako",
+    "school": "三一综合学园",
+    "series": "补课部",
+    "aliases": [
+      "Hanako",
+      "ハナコ",
+      "花子",
+      "Hanako"
+    ],
+    "themeColor": "#F7A8C4"
+  },
+  {
+    "id": "hare",
+    "schaleId": 23003,
+    "nameZh": "小钩晴",
+    "nameJa": "小鈎ハレ",
+    "nameEn": "Hare",
+    "school": "千年科学学园",
+    "series": "真理会",
+    "aliases": [
+      "Hare",
+      "ハレ",
+      "晴",
+      "Hare"
+    ],
+    "themeColor": "hsl(84 62% 58%)"
+  },
+  {
+    "id": "haruka",
+    "schaleId": 16000,
+    "nameZh": "伊草遥香",
+    "nameJa": "伊草ハルカ",
+    "nameEn": "Haruka",
+    "school": "格黑娜学园",
+    "series": "便利屋68",
+    "aliases": [
+      "Haruka",
+      "ハルカ",
+      "遥香",
+      "Haruka"
+    ],
+    "themeColor": "hsl(154 62% 58%)"
+  },
+  {
+    "id": "haruna",
+    "schaleId": 10002,
+    "nameZh": "黑馆晴奈",
+    "nameJa": "黒舘ハルナ",
+    "nameEn": "Haruna",
+    "school": "格黑娜学园",
+    "series": "美食研究会",
+    "aliases": [
+      "Haruna",
+      "ハルナ",
+      "晴奈",
+      "Haruna"
+    ],
+    "themeColor": "hsl(247 62% 58%)"
+  },
+  {
+    "id": "hasumi",
+    "schaleId": 13003,
+    "nameZh": "羽川莲见",
+    "nameJa": "羽川ハスミ",
+    "nameEn": "Hasumi",
+    "school": "三一综合学园",
+    "series": "正义实现委员会",
+    "aliases": [
+      "Hasumi",
+      "ハスミ",
+      "莲见",
+      "Hasumi"
+    ],
+    "themeColor": "hsl(135 62% 58%)"
+  },
+  {
+    "id": "hatsune_miku",
+    "schaleId": 20007,
+    "nameZh": "初音未来",
+    "nameJa": "初音ミク",
+    "nameEn": "Hatsune Miku",
+    "school": "夏莱",
+    "series": "夏莱办公室",
+    "aliases": [
+      "Hatsune Miku",
+      "ミク",
+      "未来",
+      "Hatsune Miku"
+    ],
+    "themeColor": "hsl(306 62% 58%)"
+  },
+  {
+    "id": "hibiki",
+    "schaleId": 20000,
+    "nameZh": "猫冢响",
+    "nameJa": "猫塚ヒビキ",
+    "nameEn": "Hibiki",
+    "school": "千年科学学园",
+    "series": "工程部",
+    "aliases": [
+      "Hibiki",
+      "ヒビキ",
+      "响",
+      "Hibiki"
+    ],
+    "themeColor": "#F5C542"
+  },
+  {
+    "id": "hifumi",
+    "schaleId": 10003,
+    "nameZh": "阿慈谷日富美",
+    "nameJa": "阿慈谷ヒフミ",
+    "nameEn": "Hifumi",
+    "school": "三一综合学园",
+    "series": "补课部",
+    "aliases": [
+      "Hifumi",
+      "ヒフミ",
+      "日富美",
+      "Hifumi"
+    ],
+    "themeColor": "#F5D76E"
+  },
+  {
+    "id": "hikari",
+    "nameZh": "橘光",
+    "nameJa": "橘ヒカリ",
+    "nameEn": "Hikari",
+    "school": "海兰德铁道学园",
+    "series": "中央控制中心",
+    "aliases": [
+      "Hikari",
+      "光"
+    ],
+    "themeColor": "hsl(30 62% 58%)"
+  },
+  {
+    "id": "himari",
+    "schaleId": 20020,
+    "nameZh": "明星日鞠",
+    "nameJa": "明星ヒマリ",
+    "nameEn": "Himari",
+    "school": "千年科学学园",
+    "series": "特异现象调查部",
+    "aliases": [
+      "Himari",
+      "ヒマリ",
+      "日鞠",
+      "Himari"
+    ],
+    "themeColor": "hsl(212 62% 58%)"
+  },
+  {
+    "id": "hina",
+    "schaleId": 10004,
+    "nameZh": "空崎日奈",
+    "nameJa": "空崎ヒナ",
+    "nameEn": "Hina",
+    "school": "格黑娜学园",
+    "series": "风纪委员会",
+    "aliases": [
+      "Hina",
+      "ヒナ",
+      "日奈",
+      "Hina"
+    ],
+    "themeColor": "#8E7CF0"
+  },
+  {
+    "id": "hinata",
+    "schaleId": 10036,
+    "nameZh": "若叶日向",
+    "nameJa": "若葉ヒナタ",
+    "nameEn": "Hinata",
+    "school": "三一综合学园",
+    "series": "修女会",
+    "aliases": [
+      "Hinata",
+      "ヒナタ",
+      "日向",
+      "Hinata"
+    ],
+    "themeColor": "hsl(177 62% 58%)"
+  },
+  {
+    "id": "hiyori",
+    "schaleId": 20017,
+    "nameZh": "槌永日和",
+    "nameJa": "槌永ヒヨリ",
+    "nameEn": "Hiyori",
+    "school": "阿里乌斯分校",
+    "series": "阿里乌斯小队",
+    "aliases": [
+      "Hiyori",
+      "ヒヨリ",
+      "日和",
+      "Hiyori"
+    ],
+    "themeColor": "hsl(358 62% 58%)"
+  },
+  {
+    "id": "hoshino",
+    "schaleId": 10005,
+    "nameZh": "小鸟游星野",
+    "nameJa": "小鳥遊ホシノ",
+    "nameEn": "Hoshino",
+    "school": "阿拜多斯高级中学",
+    "series": "对策委员会",
+    "aliases": [
+      "Hoshino",
+      "ホシノ",
+      "星野",
+      "Hoshino"
+    ],
+    "themeColor": "#F2A0C0"
+  },
+  {
+    "id": "ibuki",
+    "schaleId": 16014,
+    "nameZh": "丹花伊吹",
+    "nameJa": "丹花イブキ",
+    "nameEn": "Ibuki",
+    "school": "格黑娜学园",
+    "series": "万魔殿",
+    "aliases": [
+      "Ibuki",
+      "イブキ",
+      "伊吹",
+      "Ibuki"
+    ],
+    "themeColor": "hsl(50 62% 58%)"
+  },
+  {
+    "id": "ichika",
+    "schaleId": 10077,
+    "nameZh": "仲正一花",
+    "nameJa": "仲正イチカ",
+    "nameEn": "Ichika",
+    "school": "三一综合学园",
+    "series": "正义实现委员会",
+    "aliases": [
+      "Ichika",
+      "イチカ",
+      "一花",
+      "Ichika"
+    ],
+    "themeColor": "hsl(345 62% 58%)"
+  },
+  {
+    "id": "iori",
+    "schaleId": 10006,
+    "nameZh": "银镜伊织",
+    "nameJa": "銀鏡イオリ",
+    "nameEn": "Iori",
+    "school": "格黑娜学园",
+    "series": "风纪委员会",
+    "aliases": [
+      "Iori",
+      "イオリ",
+      "伊织",
+      "Iori"
+    ],
+    "themeColor": "#F08080"
+  },
+  {
+    "id": "iroha",
+    "schaleId": 20016,
+    "nameZh": "枣伊吕波",
+    "nameJa": "棗イロハ",
+    "nameEn": "Iroha",
+    "school": "格黑娜学园",
+    "series": "万魔殿",
+    "aliases": [
+      "Iroha",
+      "イロハ",
+      "伊吕波",
+      "Iroha"
+    ],
+    "themeColor": "#F0A868"
+  },
+  {
+    "id": "izumi",
+    "schaleId": 10009,
+    "nameZh": "狮子堂泉",
+    "nameJa": "獅子堂イズミ",
+    "nameEn": "Izumi",
+    "school": "格黑娜学园",
+    "series": "美食研究会",
+    "aliases": [
+      "Izumi",
+      "イズミ",
+      "泉",
+      "Izumi"
+    ],
+    "themeColor": "hsl(136 62% 58%)"
+  },
+  {
+    "id": "izuna",
+    "schaleId": 10014,
+    "nameZh": "久田泉奈",
+    "nameJa": "久田イズナ",
+    "nameEn": "Izuna",
+    "school": "百鬼夜行联合学园",
+    "series": "忍术研究部",
+    "aliases": [
+      "Izuna",
+      "イズナ",
+      "泉奈",
+      "Izuna"
+    ],
+    "themeColor": "#F09AA8"
+  },
+  {
+    "id": "junko",
+    "schaleId": 13007,
+    "nameZh": "赤司纯子",
+    "nameJa": "赤司ジュンコ",
+    "nameEn": "Junko",
+    "school": "格黑娜学园",
+    "series": "美食研究会",
+    "aliases": [
+      "Junko",
+      "ジュンコ",
+      "纯子",
+      "Junko"
+    ],
+    "themeColor": "hsl(39 62% 58%)"
+  },
+  {
+    "id": "juri",
+    "schaleId": 26002,
+    "nameZh": "牛牧茱莉",
+    "nameJa": "牛牧ジュリ",
+    "nameEn": "Juri",
+    "school": "格黑娜学园",
+    "series": "供餐部",
+    "aliases": [
+      "Juri",
+      "ジュリ",
+      "茱莉",
+      "Juri"
+    ],
+    "themeColor": "hsl(50 62% 58%)"
+  },
+  {
+    "id": "kaede",
+    "schaleId": 20015,
+    "nameZh": "勇美枫",
+    "nameJa": "勇美カエデ",
+    "nameEn": "Kaede",
+    "school": "百鬼夜行联合学园",
+    "series": "修行部",
+    "aliases": [
+      "Kaede",
+      "カエデ",
+      "枫",
+      "Kaede"
+    ],
+    "themeColor": "hsl(264 62% 58%)"
+  },
+  {
+    "id": "kaho",
+    "schaleId": 10065,
+    "nameZh": "桑上果穗",
+    "nameJa": "桑上カホ",
+    "nameEn": "Kaho",
+    "school": "百鬼夜行联合学园",
+    "series": "阴阳部",
+    "aliases": [
+      "Kaho",
+      "カホ",
+      "果穗",
+      "Kaho"
+    ],
+    "themeColor": "hsl(237 62% 58%)"
+  },
+  {
+    "id": "kanna",
+    "schaleId": 20023,
+    "nameZh": "尾刃叶渚",
+    "nameJa": "尾刃カンナ",
+    "nameEn": "Kanna",
+    "school": "瓦尔基里警察学校",
+    "series": "公共安全局",
+    "aliases": [
+      "Kanna",
+      "カンナ",
+      "叶渚",
+      "Kanna"
+    ],
+    "themeColor": "hsl(219 62% 58%)"
+  },
+  {
+    "id": "karin",
+    "schaleId": 20001,
+    "nameZh": "角楯花凛",
+    "nameJa": "角楯カリン",
+    "nameEn": "Karin",
+    "school": "千年科学学园",
+    "series": "C&C",
+    "aliases": [
+      "Karin",
+      "カリン",
+      "花凛",
+      "Karin"
+    ],
+    "themeColor": "#5B8DEF"
+  },
+  {
+    "id": "kasumi",
+    "schaleId": 10078,
+    "nameZh": "鬼怒川霞",
+    "nameJa": "鬼怒川カスミ",
+    "nameEn": "Kasumi",
+    "school": "格黑娜学园",
+    "series": "温泉开发部",
+    "aliases": [
+      "Kasumi",
+      "カスミ",
+      "霞",
+      "Kasumi"
+    ],
+    "themeColor": "hsl(228 62% 58%)"
+  },
+  {
+    "id": "kayoko",
+    "schaleId": 13005,
+    "nameZh": "鬼方佳代子",
+    "nameJa": "鬼方カヨコ",
+    "nameEn": "Kayoko",
+    "school": "格黑娜学园",
+    "series": "便利屋68",
+    "aliases": [
+      "Kayoko",
+      "カヨコ",
+      "佳代子",
+      "Kayoko"
+    ],
+    "themeColor": "#6E7B8B"
+  },
+  {
+    "id": "kazusa",
+    "schaleId": 10049,
+    "nameZh": "杏山和纱",
+    "nameJa": "杏山カズサ",
+    "nameEn": "Kazusa",
+    "school": "三一综合学园",
+    "series": "放学后甜品部",
+    "aliases": [
+      "Kazusa",
+      "カズサ",
+      "和纱",
+      "Kazusa"
+    ],
+    "themeColor": "#E8A87C"
+  },
+  {
+    "id": "kikyou",
+    "schaleId": 10083,
+    "nameZh": "桐生桔梗",
+    "nameJa": "桐生キキョウ",
+    "nameEn": "Kikyou",
+    "school": "百鬼夜行联合学园",
+    "series": "百花缭乱纷争调解委员会",
+    "aliases": [
+      "Kikyou",
+      "キキョウ",
+      "桔梗",
+      "Kikyou"
+    ],
+    "themeColor": "hsl(66 62% 58%)"
+  },
+  {
+    "id": "kirara",
+    "schaleId": 10093,
+    "nameZh": "夜樱绮罗罗",
+    "nameJa": "夜桜キララ",
+    "nameEn": "Kirara",
+    "school": "格黑娜学园",
+    "series": "闪耀部",
+    "aliases": [
+      "Kirara",
+      "キララ",
+      "绮罗罗",
+      "Kirara"
+    ],
+    "themeColor": "hsl(212 62% 58%)"
+  },
+  {
+    "id": "kirino",
+    "schaleId": 13012,
+    "nameZh": "中务桐乃",
+    "nameJa": "中務キリノ",
+    "nameEn": "Kirino",
+    "school": "瓦尔基里警察学校",
+    "series": "生活安全局",
+    "aliases": [
+      "Kirino",
+      "キリノ",
+      "桐乃",
+      "Kirino"
+    ],
+    "themeColor": "hsl(230 62% 58%)"
+  },
+  {
+    "id": "kisaki",
+    "nameZh": "龙华妃咲",
+    "nameJa": "竜華キサキ",
+    "nameEn": "Kisaki",
+    "school": "山海经高级中学",
+    "series": "玄龙门",
+    "aliases": [
+      "Kisaki",
+      "妃咲"
+    ],
+    "themeColor": "hsl(274 62% 58%)"
+  },
+  {
+    "id": "koharu",
+    "schaleId": 10020,
+    "nameZh": "下江小春",
+    "nameJa": "下江コハル",
+    "nameEn": "Koharu",
+    "school": "三一综合学园",
+    "series": "补课部",
+    "aliases": [
+      "Koharu",
+      "コハル",
+      "小春",
+      "Koharu"
+    ],
+    "themeColor": "hsl(48 62% 58%)"
+  },
+  {
+    "id": "kokona",
+    "schaleId": 10050,
+    "nameZh": "春原心奈",
+    "nameJa": "春原ココナ",
+    "nameEn": "Kokona",
+    "school": "山海经高级中学",
+    "series": "梅花园",
+    "aliases": [
+      "Kokona",
+      "ココナ",
+      "心奈",
+      "Kokona"
+    ],
+    "themeColor": "hsl(131 62% 58%)"
+  },
+  {
+    "id": "kotama",
+    "schaleId": 26001,
+    "nameZh": "音濑小玉",
+    "nameJa": "音瀬コタマ",
+    "nameEn": "Kotama",
+    "school": "千年科学学园",
+    "series": "真理会",
+    "aliases": [
+      "Kotama",
+      "コタマ",
+      "小玉",
+      "Kotama"
+    ],
+    "themeColor": "hsl(245 62% 58%)"
+  },
+  {
+    "id": "kotori",
+    "schaleId": 16002,
+    "nameZh": "丰见琴里",
+    "nameJa": "豊見コトリ",
+    "nameEn": "Kotori",
+    "school": "千年科学学园",
+    "series": "工程部",
+    "aliases": [
+      "Kotori",
+      "コトリ",
+      "琴里",
+      "Kotori"
+    ],
+    "themeColor": "hsl(182 62% 58%)"
+  },
+  {
+    "id": "koyuki",
+    "schaleId": 10063,
+    "nameZh": "黑崎小雪",
+    "nameJa": "黒崎コユキ",
+    "nameEn": "Koyuki",
+    "school": "千年科学学园",
+    "series": "研讨会",
+    "aliases": [
+      "Koyuki",
+      "コユキ",
+      "小雪",
+      "Koyuki"
+    ],
+    "themeColor": "hsl(246 62% 58%)"
+  },
+  {
+    "id": "maki",
+    "schaleId": 10007,
+    "nameZh": "小涂真纪",
+    "nameJa": "小塗マキ",
+    "nameEn": "Maki",
+    "school": "千年科学学园",
+    "series": "真理会",
+    "aliases": [
+      "Maki",
+      "マキ",
+      "真纪",
+      "Maki"
+    ],
+    "themeColor": "hsl(146 62% 58%)"
+  },
+  {
+    "id": "makoto",
+    "schaleId": 20033,
+    "nameZh": "羽沼真琴",
+    "nameJa": "羽沼マコト",
+    "nameEn": "Makoto",
+    "school": "格黑娜学园",
+    "series": "万魔殿",
+    "aliases": [
+      "Makoto",
+      "マコト",
+      "真琴",
+      "Makoto"
+    ],
+    "themeColor": "hsl(19 62% 58%)"
+  },
+  {
+    "id": "mari",
+    "schaleId": 23008,
+    "nameZh": "伊落玛丽",
+    "nameJa": "伊落マリー",
+    "nameEn": "Mari",
+    "school": "三一综合学园",
+    "series": "修女会",
+    "aliases": [
+      "Mari",
+      "マリー",
+      "玛丽",
+      "Mari"
+    ],
+    "themeColor": "#C8A2E0"
+  },
+  {
+    "id": "marina",
+    "schaleId": 10037,
+    "nameZh": "池仓玛利娜",
+    "nameJa": "池倉マリナ",
+    "nameEn": "Marina",
+    "school": "红冬联邦学园",
+    "series": "红冬事务局",
+    "aliases": [
+      "Marina",
+      "マリナ",
+      "玛利娜",
+      "Marina"
+    ],
+    "themeColor": "hsl(270 62% 58%)"
+  },
+  {
+    "id": "mashiro",
+    "schaleId": 20003,
+    "nameZh": "静山真白",
+    "nameJa": "静山マシロ",
+    "nameEn": "Mashiro",
+    "school": "三一综合学园",
+    "series": "正义实现委员会",
+    "aliases": [
+      "Mashiro",
+      "マシロ",
+      "真白",
+      "Mashiro"
+    ],
+    "themeColor": "hsl(317 62% 58%)"
+  },
+  {
+    "id": "megu",
+    "schaleId": 10060,
+    "nameZh": "下仓惠",
+    "nameJa": "下倉メグ",
+    "nameEn": "Megu",
+    "school": "格黑娜学园",
+    "series": "温泉开发部",
+    "aliases": [
+      "Megu",
+      "メグ",
+      "惠",
+      "Megu"
+    ],
+    "themeColor": "hsl(278 62% 58%)"
+  },
+  {
+    "id": "meru",
+    "schaleId": 10075,
+    "nameZh": "姬木芽瑠",
+    "nameJa": "姫木メル",
+    "nameEn": "Meru",
+    "school": "红冬联邦学园",
+    "series": "知识解放战线",
+    "aliases": [
+      "Meru",
+      "メル",
+      "芽瑠",
+      "Meru"
+    ],
+    "themeColor": "hsl(259 62% 58%)"
+  },
+  {
+    "id": "michiru",
+    "schaleId": 16009,
+    "nameZh": "千鸟满",
+    "nameJa": "千鳥ミチル",
+    "nameEn": "Michiru",
+    "school": "百鬼夜行联合学园",
+    "series": "忍术研究部",
+    "aliases": [
+      "Michiru",
+      "ミチル",
+      "满",
+      "Michiru"
+    ],
+    "themeColor": "hsl(315 62% 58%)"
+  },
+  {
+    "id": "midori",
+    "schaleId": 10016,
+    "nameZh": "才羽绿",
+    "nameJa": "才羽ミドリ",
+    "nameEn": "Midori",
+    "school": "千年科学学园",
+    "series": "游戏开发部",
+    "aliases": [
+      "Midori",
+      "ミドリ",
+      "绿",
+      "Midori"
+    ],
+    "themeColor": "#8BE08B"
+  },
+  {
+    "id": "mika",
+    "schaleId": 10059,
+    "nameZh": "圣园未花",
+    "nameJa": "聖園ミカ",
+    "nameEn": "Mika",
+    "school": "三一综合学园",
+    "series": "茶会",
+    "aliases": [
+      "Mika",
+      "ミカ",
+      "未花",
+      "Mika"
+    ],
+    "themeColor": "#F0A8CC"
+  },
+  {
+    "id": "mimori",
+    "schaleId": 10034,
+    "nameZh": "水羽三森",
+    "nameJa": "水羽ミモリ",
+    "nameEn": "Mimori",
+    "school": "百鬼夜行联合学园",
+    "series": "修行部",
+    "aliases": [
+      "Mimori",
+      "ミモリ",
+      "三森",
+      "Mimori"
+    ],
+    "themeColor": "hsl(21 62% 58%)"
+  },
+  {
+    "id": "mina",
+    "schaleId": 10070,
+    "nameZh": "近卫弥奈",
+    "nameJa": "近衛ミナ",
+    "nameEn": "Mina",
+    "school": "山海经高级中学",
+    "series": "玄龙门",
+    "aliases": [
+      "Mina",
+      "ミナ",
+      "弥奈",
+      "Mina"
+    ],
+    "themeColor": "hsl(359 62% 58%)"
+  },
+  {
+    "id": "mine",
+    "schaleId": 10058,
+    "nameZh": "苍森美祢",
+    "nameJa": "蒼森ミネ",
+    "nameEn": "Mine",
+    "school": "三一综合学园",
+    "series": "救护骑士团",
+    "aliases": [
+      "Mine",
+      "ミネ",
+      "美祢",
+      "Mine"
+    ],
+    "themeColor": "hsl(3 62% 58%)"
+  },
+  {
+    "id": "minori",
+    "schaleId": 20026,
+    "nameZh": "安守实里",
+    "nameJa": "安守ミノリ",
+    "nameEn": "Minori",
+    "school": "红冬联邦学园",
+    "series": "建设部",
+    "aliases": [
+      "Minori",
+      "ミノリ",
+      "实里",
+      "Minori"
+    ],
+    "themeColor": "hsl(292 62% 58%)"
+  },
+  {
+    "id": "misaka_mikoto",
+    "schaleId": 10079,
+    "nameZh": "御坂美琴",
+    "nameJa": "御坂 美琴",
+    "nameEn": "Misaka Mikoto",
+    "school": "常盘台中学&栅川中学",
+    "series": "无",
+    "aliases": [
+      "Misaka Mikoto",
+      " 美琴",
+      "美琴",
+      "Misaka Mikoto"
+    ],
+    "themeColor": "hsl(43 62% 58%)"
+  },
+  {
+    "id": "misaki",
+    "schaleId": 10041,
+    "nameZh": "戒野美咲",
+    "nameJa": "戒野ミサキ",
+    "nameEn": "Misaki",
+    "school": "阿里乌斯分校",
+    "series": "阿里乌斯小队",
+    "aliases": [
+      "Misaki",
+      "ミサキ",
+      "美咲",
+      "Misaki"
+    ],
+    "themeColor": "hsl(216 62% 58%)"
+  },
+  {
+    "id": "miyako",
+    "schaleId": 10038,
+    "nameZh": "月雪宫子",
+    "nameJa": "月雪ミヤコ",
+    "nameEn": "Miyako",
+    "school": "SRT特殊学园",
+    "series": "RABBIT小队",
+    "aliases": [
+      "Miyako",
+      "ミヤコ",
+      "宫子",
+      "Miyako"
+    ],
+    "themeColor": "hsl(48 62% 58%)"
+  },
+  {
+    "id": "miyu",
+    "schaleId": 10039,
+    "nameZh": "霞泽美游",
+    "nameJa": "霞沢ミユ",
+    "nameEn": "Miyu",
+    "school": "SRT特殊学园",
+    "series": "RABBIT小队",
+    "aliases": [
+      "Miyu",
+      "ミユ",
+      "美游",
+      "Miyu"
+    ],
+    "themeColor": "hsl(0 62% 58%)"
+  },
+  {
+    "id": "moe",
+    "schaleId": 20018,
+    "nameZh": "风仓萌绘",
+    "nameJa": "風倉モエ",
+    "nameEn": "Moe",
+    "school": "SRT特殊学园",
+    "series": "RABBIT小队",
+    "aliases": [
+      "Moe",
+      "モエ",
+      "萌绘",
+      "Moe"
+    ],
+    "themeColor": "hsl(139 62% 58%)"
+  },
+  {
+    "id": "momiji",
+    "schaleId": 13013,
+    "nameZh": "秋泉红叶",
+    "nameJa": "秋泉モミジ",
+    "nameEn": "Momiji",
+    "school": "红冬联邦学园",
+    "series": "知识解放战线",
+    "aliases": [
+      "Momiji",
+      "モミジ",
+      "红叶",
+      "Momiji"
+    ],
+    "themeColor": "hsl(133 62% 58%)"
+  },
+  {
+    "id": "momoi",
+    "schaleId": 13011,
+    "nameZh": "才羽桃井",
+    "nameJa": "才羽モモイ",
+    "nameEn": "Momoi",
+    "school": "千年科学学园",
+    "series": "游戏开发部",
+    "aliases": [
+      "Momoi",
+      "モモイ",
+      "桃井",
+      "Momoi"
+    ],
+    "themeColor": "#FF9EC4"
+  },
+  {
+    "id": "mutsuki",
+    "schaleId": 13006,
+    "nameZh": "浅黄睦月",
+    "nameJa": "浅黄ムツキ",
+    "nameEn": "Mutsuki",
+    "school": "格黑娜学园",
+    "series": "便利屋68",
+    "aliases": [
+      "Mutsuki",
+      "ムツキ",
+      "睦月",
+      "Mutsuki"
+    ],
+    "themeColor": "hsl(108 62% 58%)"
+  },
+  {
+    "id": "nagisa",
+    "schaleId": 20024,
+    "nameZh": "桐藤渚",
+    "nameJa": "桐藤ナギサ",
+    "nameEn": "Nagisa",
+    "school": "三一综合学园",
+    "series": "茶会",
+    "aliases": [
+      "Nagisa",
+      "ナギサ",
+      "渚",
+      "Nagisa"
+    ],
+    "themeColor": "hsl(115 62% 58%)"
+  },
+  {
+    "id": "natsu",
+    "schaleId": 10029,
+    "nameZh": "柚鸟夏",
+    "nameJa": "柚鳥ナツ",
+    "nameEn": "Natsu",
+    "school": "三一综合学园",
+    "series": "放学后甜品部",
+    "aliases": [
+      "Natsu",
+      "ナツ",
+      "夏",
+      "Natsu"
+    ],
+    "themeColor": "hsl(43 62% 58%)"
+  },
+  {
+    "id": "neru",
+    "schaleId": 10008,
+    "nameZh": "美甘尼露",
+    "nameJa": "美甘ネル",
+    "nameEn": "Neru",
+    "school": "千年科学学园",
+    "series": "C&C",
+    "aliases": [
+      "Neru",
+      "ネル",
+      "尼露",
+      "Neru"
+    ],
+    "themeColor": "hsl(170 62% 58%)"
+  },
+  {
+    "id": "noa",
+    "schaleId": 10052,
+    "nameZh": "生盐诺亚",
+    "nameJa": "生塩ノア",
+    "nameEn": "Noa",
+    "school": "千年科学学园",
+    "series": "研讨会",
+    "aliases": [
+      "Noa",
+      "ノア",
+      "诺亚",
+      "Noa"
+    ],
+    "themeColor": "#B8C6DC"
+  },
+  {
+    "id": "nodoka",
+    "schaleId": 26006,
+    "nameZh": "天见和香",
+    "nameJa": "天見ノドカ",
+    "nameEn": "Nodoka",
+    "school": "红冬联邦学园",
+    "series": "227号特别班",
+    "aliases": [
+      "Nodoka",
+      "ノドカ",
+      "和香",
+      "Nodoka"
+    ],
+    "themeColor": "hsl(34 62% 58%)"
+  },
+  {
+    "id": "nonomi",
+    "schaleId": 13004,
+    "nameZh": "十六夜野宫",
+    "nameJa": "十六夜ノノミ",
+    "nameEn": "Nonomi",
+    "school": "阿拜多斯高级中学",
+    "series": "对策委员会",
+    "aliases": [
+      "Nonomi",
+      "ノノミ",
+      "野宫",
+      "Nonomi"
+    ],
+    "themeColor": "#7ED0F0"
+  },
+  {
+    "id": "nozomi",
+    "nameZh": "橘希",
+    "nameJa": "橘ノゾミ",
+    "nameEn": "Nozomi",
+    "school": "海兰德铁道学园",
+    "series": "中央控制中心",
+    "aliases": [
+      "Nozomi",
+      "希"
+    ],
+    "themeColor": "hsl(306 62% 58%)"
+  },
+  {
+    "id": "pina",
+    "schaleId": 16004,
+    "nameZh": "朝比奈菲娜",
+    "nameJa": "朝比奈フィーナ",
+    "nameEn": "Pina",
+    "school": "百鬼夜行联合学园",
+    "series": "节庆运营委员会",
+    "aliases": [
+      "Pina",
+      "フィーナ",
+      "菲娜",
+      "Pina"
+    ],
+    "themeColor": "hsl(92 62% 58%)"
+  },
+  {
+    "id": "plana",
+    "nameZh": "普拉娜",
+    "nameJa": "プラナ",
+    "nameEn": "Plana",
+    "series": "夏莱办公室",
+    "aliases": [
+      "Plana",
+      "pulana"
+    ],
+    "themeColor": "hsl(312 62% 58%)",
+    "school": "夏莱"
+  },
+  {
+    "id": "reisa",
+    "schaleId": 10068,
+    "nameZh": "宇泽玲纱",
+    "nameJa": "宇沢レイサ",
+    "nameEn": "Reisa",
+    "school": "三一综合学园",
+    "series": "三一自警团",
+    "aliases": [
+      "Reisa",
+      "レイサ",
+      "玲纱",
+      "Reisa"
+    ],
+    "themeColor": "hsl(20 62% 58%)"
+  },
+  {
+    "id": "renge",
+    "schaleId": 10082,
+    "nameZh": "不破莲华",
+    "nameJa": "不破レンゲ",
+    "nameEn": "Renge",
+    "school": "百鬼夜行联合学园",
+    "series": "百花缭乱纷争调解委员会",
+    "aliases": [
+      "Renge",
+      "レンゲ",
+      "莲华",
+      "Renge"
+    ],
+    "themeColor": "hsl(137 62% 58%)"
+  },
+  {
+    "id": "rio",
+    "nameZh": "月读莉央",
+    "nameJa": "月読リオ",
+    "nameEn": "Rio",
+    "school": "千年科学学园",
+    "series": "研讨会",
+    "aliases": [
+      "Rio",
+      "莉央"
+    ],
+    "themeColor": "hsl(88 62% 58%)"
+  },
+  {
+    "id": "rumi",
+    "schaleId": 10069,
+    "nameZh": "朱城瑠美",
+    "nameJa": "朱城ルミ",
+    "nameEn": "Rumi",
+    "school": "山海经高级中学",
+    "series": "玄武商会",
+    "aliases": [
+      "Rumi",
+      "ルミ",
+      "瑠美",
+      "Rumi"
+    ],
+    "themeColor": "hsl(263 62% 58%)"
+  },
+  {
+    "id": "saki",
+    "schaleId": 20014,
+    "nameZh": "空井咲",
+    "nameJa": "空井サキ",
+    "nameEn": "Saki",
+    "school": "SRT特殊学园",
+    "series": "RABBIT小队",
+    "aliases": [
+      "Saki",
+      "サキ",
+      "咲",
+      "Saki"
+    ],
+    "themeColor": "hsl(332 62% 58%)"
+  },
+  {
+    "id": "sakurako",
+    "schaleId": 10061,
+    "nameZh": "歌住樱子",
+    "nameJa": "歌住サクラコ",
+    "nameEn": "Sakurako",
+    "school": "三一综合学园",
+    "series": "修女会",
+    "aliases": [
+      "Sakurako",
+      "サクラコ",
+      "樱子",
+      "Sakurako"
+    ],
+    "themeColor": "hsl(131 62% 58%)"
+  },
+  {
+    "id": "saori",
+    "schaleId": 10048,
+    "nameZh": "锭前纱织",
+    "nameJa": "錠前サオリ",
+    "nameEn": "Saori",
+    "school": "阿里乌斯分校",
+    "series": "阿里乌斯小队",
+    "aliases": [
+      "Saori",
+      "サオリ",
+      "纱织",
+      "Saori"
+    ],
+    "themeColor": "hsl(120 62% 58%)"
+  },
+  {
+    "id": "saten_ruiko",
+    "schaleId": 26011,
+    "nameZh": "佐天泪子",
+    "nameJa": "佐天涙子",
+    "nameEn": "Saten Ruiko",
+    "school": "常盘台中学&栅川中学",
+    "series": "无",
+    "aliases": [
+      "Saten Ruiko",
+      "涙子",
+      "泪子",
+      "Saten Ruiko"
+    ],
+    "themeColor": "hsl(9 62% 58%)"
+  },
+  {
+    "id": "satsuki",
+    "nameZh": "京极皋月",
+    "nameJa": "京極サツキ",
+    "nameEn": "Kyougoku Satsuki",
+    "school": "格黑娜学园",
+    "series": "万魔殿",
+    "aliases": [
+      "Satsuki",
+      "サツキ",
+      "皋月",
+      "皐月",
+      "Kyougoku Satsuki"
+    ],
+    "themeColor": "hsl(78 62% 58%)"
+  },
+  {
+    "id": "saya",
+    "schaleId": 20002,
+    "nameZh": "药子纱绫",
+    "nameJa": "薬子サヤ",
+    "nameEn": "Saya",
+    "school": "山海经高级中学",
+    "series": "炼丹术研究会",
+    "aliases": [
+      "Saya",
+      "サヤ",
+      "纱绫",
+      "Saya"
+    ],
+    "themeColor": "hsl(38 62% 58%)"
+  },
+  {
+    "id": "seia",
+    "nameZh": "百合园圣亚",
+    "nameJa": "百合園セイア",
+    "nameEn": "Seia",
+    "school": "三一综合学园",
+    "series": "茶会",
+    "aliases": [
+      "Seia",
+      "圣亚"
+    ],
+    "themeColor": "#9AD1A0"
+  },
+  {
+    "id": "sena",
+    "schaleId": 20012,
+    "nameZh": "冰室濑名",
+    "nameJa": "氷室セナ",
+    "nameEn": "Sena",
+    "school": "格黑娜学园",
+    "series": "急救医学部",
+    "aliases": [
+      "Sena",
+      "セナ",
+      "濑名",
+      "Sena"
+    ],
+    "themeColor": "hsl(301 62% 58%)"
+  },
+  {
+    "id": "serika",
+    "schaleId": 13008,
+    "nameZh": "黑见芹香",
+    "nameJa": "黒見セリカ",
+    "nameEn": "Serika",
+    "school": "阿拜多斯高级中学",
+    "series": "对策委员会",
+    "aliases": [
+      "Serika",
+      "セリカ",
+      "芹香",
+      "Serika"
+    ],
+    "themeColor": "#F5A623"
+  },
+  {
+    "id": "serina",
+    "schaleId": 26003,
+    "nameZh": "鹫见芹娜",
+    "nameJa": "鷲見セリナ",
+    "nameEn": "Serina",
+    "school": "三一综合学园",
+    "series": "救护骑士团",
+    "aliases": [
+      "Serina",
+      "セリナ",
+      "芹娜",
+      "Serina"
+    ],
+    "themeColor": "hsl(220 62% 58%)"
+  },
+  {
+    "id": "shigure",
+    "schaleId": 10055,
+    "nameZh": "间宵时雨",
+    "nameJa": "間宵シグレ",
+    "nameEn": "Shigure",
+    "school": "红冬联邦学园",
+    "series": "227号特别班",
+    "aliases": [
+      "Shigure",
+      "シグレ",
+      "时雨",
+      "Shigure"
+    ],
+    "themeColor": "hsl(5 62% 58%)"
+  },
+  {
+    "id": "shimiko",
+    "schaleId": 26004,
+    "nameZh": "圆堂志美子",
+    "nameJa": "円堂シミコ",
+    "nameEn": "Shimiko",
+    "school": "三一综合学园",
+    "series": "图书委员会",
+    "aliases": [
+      "Shimiko",
+      "シミコ",
+      "志美子",
+      "Shimiko"
+    ],
+    "themeColor": "hsl(332 62% 58%)"
+  },
+  {
+    "id": "shiroko",
+    "schaleId": 10010,
+    "nameZh": "砂狼白子",
+    "nameJa": "砂狼シロコ",
+    "nameEn": "Shiroko",
+    "school": "阿拜多斯高级中学",
+    "series": "对策委员会",
+    "aliases": [
+      "Shiroko",
+      "シロコ",
+      "白子",
+      "Shiroko"
+    ],
+    "themeColor": "#4A9EFF"
+  },
+  {
+    "id": "shiroko_terror",
+    "schaleId": 10100,
+    "nameZh": "砂狼白子",
+    "nameJa": "砂狼シロコ＊テラー",
+    "nameEn": "Shiroko Terror",
+    "school": "阿拜多斯高级中学",
+    "series": "阿拜多斯学生会",
+    "aliases": [
+      "Shiroko Terror",
+      "シロコ＊テラー",
+      "恐怖白子",
+      "白子（恐怖）"
+    ],
+    "themeColor": "#6B7CFF"
+  },
+  {
+    "id": "shizuko",
+    "schaleId": 23006,
+    "nameZh": "河和静子",
+    "nameJa": "河和シズコ",
+    "nameEn": "Shizuko",
+    "school": "百鬼夜行联合学园",
+    "series": "节庆运营委员会",
+    "aliases": [
+      "Shizuko",
+      "シズコ",
+      "静子",
+      "Shizuko"
+    ],
+    "themeColor": "hsl(267 62% 58%)"
+  },
+  {
+    "id": "shokuhou_misaki",
+    "schaleId": 10080,
+    "nameZh": "食蜂操祈",
+    "nameJa": "食蜂操祈",
+    "nameEn": "Shokuhou Misaki",
+    "school": "常盘台中学&栅川中学",
+    "series": "无",
+    "aliases": [
+      "Shokuhou Misaki",
+      "操祈",
+      "操祈",
+      "Shokuhou Misaki"
+    ],
+    "themeColor": "hsl(134 62% 58%)"
+  },
+  {
+    "id": "shun",
+    "schaleId": 10011,
+    "nameZh": "春原瞬",
+    "nameJa": "春原シュン",
+    "nameEn": "Shun",
+    "school": "山海经高级中学",
+    "series": "梅花园",
+    "aliases": [
+      "Shun",
+      "シュン",
+      "瞬",
+      "Shun"
+    ],
+    "themeColor": "hsl(174 62% 58%)"
+  },
+  {
+    "id": "sumire",
+    "schaleId": 10012,
+    "nameZh": "乙花堇",
+    "nameJa": "乙花スミレ",
+    "nameEn": "Sumire",
+    "school": "千年科学学园",
+    "series": "锻炼部",
+    "aliases": [
+      "Sumire",
+      "スミレ",
+      "堇",
+      "Sumire"
+    ],
+    "themeColor": "hsl(209 62% 58%)"
+  },
+  {
+    "id": "suzumi",
+    "schaleId": 16003,
+    "nameZh": "守月铃美",
+    "nameJa": "守月スズミ",
+    "nameEn": "Suzumi",
+    "school": "三一综合学园",
+    "series": "三一自警团",
+    "aliases": [
+      "Suzumi",
+      "スズミ",
+      "铃美",
+      "Suzumi"
+    ],
+    "themeColor": "hsl(353 62% 58%)"
+  },
+  {
+    "id": "toki",
+    "schaleId": 10062,
+    "nameZh": "飞鸟马时",
+    "nameJa": "飛鳥馬トキ",
+    "nameEn": "Toki",
+    "school": "千年科学学园",
+    "series": "C&C",
+    "aliases": [
+      "Toki",
+      "トキ",
+      "时",
+      "Toki"
+    ],
+    "themeColor": "#7ED8E0"
+  },
+  {
+    "id": "tomoe",
+    "schaleId": 16007,
+    "nameZh": "佐城智惠",
+    "nameJa": "佐城トモエ",
+    "nameEn": "Tomoe",
+    "school": "红冬联邦学园",
+    "series": "红冬事务局",
+    "aliases": [
+      "Tomoe",
+      "トモエ",
+      "智惠",
+      "Tomoe"
+    ],
+    "themeColor": "hsl(216 62% 58%)"
+  },
+  {
+    "id": "tsubaki",
+    "schaleId": 13009,
+    "nameZh": "春日椿",
+    "nameJa": "春日ツバキ",
+    "nameEn": "Tsubaki",
+    "school": "百鬼夜行联合学园",
+    "series": "修行部",
+    "aliases": [
+      "Tsubaki",
+      "ツバキ",
+      "椿",
+      "Tsubaki"
+    ],
+    "themeColor": "hsl(75 62% 58%)"
+  },
+  {
+    "id": "tsukuyo",
+    "schaleId": 10040,
+    "nameZh": "大野月咏",
+    "nameJa": "大野ツクヨ",
+    "nameEn": "Tsukuyo",
+    "school": "百鬼夜行联合学园",
+    "series": "忍术研究部",
+    "aliases": [
+      "Tsukuyo",
+      "ツクヨ",
+      "月咏",
+      "Tsukuyo"
+    ],
+    "themeColor": "hsl(214 62% 58%)"
+  },
+  {
+    "id": "tsurugi",
+    "schaleId": 10013,
+    "nameZh": "剑先鹤城",
+    "nameJa": "剣先ツルギ",
+    "nameEn": "Tsurugi",
+    "school": "三一综合学园",
+    "series": "正义实现委员会",
+    "aliases": [
+      "Tsurugi",
+      "ツルギ",
+      "鹤城",
+      "Tsurugi"
+    ],
+    "themeColor": "hsl(107 62% 58%)"
+  },
+  {
+    "id": "ui",
+    "schaleId": 10035,
+    "nameZh": "古关忧",
+    "nameJa": "古関ウイ",
+    "nameEn": "Ui",
+    "school": "三一综合学园",
+    "series": "图书委员会",
+    "aliases": [
+      "Ui",
+      "ウイ",
+      "忧",
+      "Ui"
+    ],
+    "themeColor": "hsl(220 62% 58%)"
+  },
+  {
+    "id": "umika",
+    "schaleId": 10090,
+    "nameZh": "里浜海香",
+    "nameJa": "里浜ウミカ",
+    "nameEn": "Umika",
+    "school": "百鬼夜行联合学园",
+    "series": "节庆运营委员会",
+    "aliases": [
+      "Umika",
+      "ウミカ",
+      "海香",
+      "Umika"
+    ],
+    "themeColor": "hsl(143 62% 58%)"
+  },
+  {
+    "id": "utaha",
+    "schaleId": 23004,
+    "nameZh": "白石歌原",
+    "nameJa": "白石ウタハ",
+    "nameEn": "Utaha",
+    "school": "千年科学学园",
+    "series": "工程部",
+    "aliases": [
+      "Utaha",
+      "ウタハ",
+      "歌原",
+      "Utaha"
+    ],
+    "themeColor": "hsl(19 62% 58%)"
+  },
+  {
+    "id": "wakamo",
+    "schaleId": 10033,
+    "nameZh": "狐坂若藻",
+    "nameJa": "狐坂ワカモ",
+    "nameEn": "Wakamo",
+    "school": "百鬼夜行联合学园",
+    "series": "无",
+    "aliases": [
+      "Wakamo",
+      "ワカモ",
+      "若藻",
+      "Wakamo"
+    ],
+    "themeColor": "hsl(98 62% 58%)"
+  },
+  {
+    "id": "yoshimi",
+    "schaleId": 26005,
+    "nameZh": "伊原木好美",
+    "nameJa": "伊原木ヨシミ",
+    "nameEn": "Yoshimi",
+    "school": "三一综合学园",
+    "series": "放学后甜品部",
+    "aliases": [
+      "Yoshimi",
+      "ヨシミ",
+      "好美",
+      "Yoshimi"
+    ],
+    "themeColor": "hsl(74 62% 58%)"
+  },
+  {
+    "id": "yukari",
+    "schaleId": 10081,
+    "nameZh": "勘解由小路紫草",
+    "nameJa": "勘解由小路ユカリ",
+    "nameEn": "Yukari",
+    "school": "百鬼夜行联合学园",
+    "series": "百花缭乱纷争调解委员会",
+    "aliases": [
+      "Yukari",
+      "ユカリ",
+      "紫草",
+      "Yukari"
+    ],
+    "themeColor": "hsl(89 62% 58%)"
+  },
+  {
+    "id": "yuuka",
+    "schaleId": 13010,
+    "nameZh": "早濑优香",
+    "nameJa": "早瀬ユウカ",
+    "nameEn": "Yuuka",
+    "school": "千年科学学园",
+    "series": "研讨会",
+    "aliases": [
+      "Yuuka",
+      "ユウカ",
+      "优香",
+      "Yuuka"
+    ],
+    "themeColor": "#A06EE1"
+  },
+  {
+    "id": "yuzu",
+    "schaleId": 10018,
+    "nameZh": "花冈柚子",
+    "nameJa": "花岡ユズ",
+    "nameEn": "Yuzu",
+    "school": "千年科学学园",
+    "series": "游戏开发部",
+    "aliases": [
+      "Yuzu",
+      "ユズ",
+      "柚子",
+      "Yuzu"
+    ],
+    "themeColor": "#C9E265"
+  },
+  {
+    "id": "kaiten_fx",
+    "nameZh": "KAITEN FX Mk.0",
+    "nameJa": "回転FX Mk.0",
+    "nameEn": "KAITEN FX Mk.0",
+    "series": "其他",
+    "aliases": [
+      "KAITEN FX",
+      "回転FX",
+      "回转FX",
+      "KAITEN FX Mk.0"
+    ],
+    "themeColor": "hsl(200 30% 55%)",
+    "school": "其他"
+  },
+  {
+    "id": "avant_garde_kun",
+    "nameZh": "前衛君",
+    "nameJa": "アバンギャルドくん",
+    "nameEn": "Avant-garde-kun",
+    "series": "其他",
+    "aliases": [
+      "Avant-garde-kun",
+      "アバンギャルドくん",
+      "前卫君",
+      "前衛君"
+    ],
+    "themeColor": "hsl(45 55% 55%)",
+    "school": "其他"
+  },
+  {
+    "id": "daat",
+    "nameZh": "达阿特",
+    "nameJa": "ダアト",
+    "nameEn": "Da'at",
+    "series": "其他",
+    "aliases": [
+      "Da'at",
+      "ダアト",
+      "达阿特",
+      "Daat"
+    ],
+    "themeColor": "hsl(340 45% 52%)",
+    "school": "其他"
+  }
+]

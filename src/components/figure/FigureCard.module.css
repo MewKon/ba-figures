@@ -1,0 +1,97 @@
+.card {
+  height: 100%;
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  /* 卡片强调色取自角色主题色，但不抢 BA 蓝主色：只用于 hover 描边 */
+  transition:
+    box-shadow var(--dur-base) ease,
+    border-color var(--dur-base) ease;
+}
+
+.card:hover,
+.card:focus-within {
+  border-color: color-mix(in oklab, var(--c) 45%, var(--line));
+  box-shadow: var(--shadow);
+}
+
+.link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+}
+
+.mediaInner {
+  display: block;
+}
+
+.badges {
+  position: absolute;
+  top: var(--sp-3);
+  left: var(--sp-3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-1);
+  /* 斜切徽章之间略作错位，避免整齐得呆板 */
+  transform: translateY(-1px);
+}
+
+.body {
+  padding: var(--sp-3) var(--sp-4) var(--sp-4);
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.ja {
+  margin-top: 1px;
+  font-size: 12px;
+  color: var(--ink-3);
+}
+
+.meta {
+  margin-top: var(--sp-2);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 12.5px;
+  color: var(--ink-2);
+}
+
+.mfr {
+  font-weight: 600;
+  color: var(--ba-blue-600);
+}
+
+.dot {
+  color: var(--ink-3);
+}
+
+.price {
+  margin-top: var(--sp-3);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 换算价的「≈」：比金额轻一档，不抢数字 */
+.approx {
+  margin-right: 2px;
+  color: var(--ink-3);
+  font-weight: 600;
+}

@@ -1,0 +1,58 @@
+.ph {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+
+  /* 双层背景：主题色径向高光 + 深色线性渐变 */
+  background:
+    radial-gradient(120% 80% at 30% 0%, color-mix(in oklab, var(--c) 72%, #fff) 0%, transparent 62%),
+    linear-gradient(160deg, var(--c) 0%, #1a2740 100%);
+}
+
+.ph::after {
+  /* 细网点纹理，避免大面积纯渐变显得空 */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 1px, transparent 1px);
+  background-size: 12px 12px;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.ring {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.55;
+}
+
+.initial {
+  font-size: clamp(2rem, 14cqw, 4rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+}
+
+.sub {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  opacity: 0.72;
+  white-space: nowrap;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.large .initial {
+  font-size: clamp(3.5rem, 18cqw, 7rem);
+}

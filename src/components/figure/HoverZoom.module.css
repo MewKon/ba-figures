@@ -1,0 +1,94 @@
+/* 覆盖层：铺满父容器（.media），只负责接鼠标事件，本身不可见 */
+.wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+/* 放大浮层：贴着主图右侧，盖在详情文字上方（z-index 高于普通内容） */
+.lens {
+  position: absolute;
+  top: 0;
+  /* 主图是 grid 里的一格，浮层锚到容器右缘外 16px 处 */
+  left: calc(100% + 16px);
+  width: 380px;
+  height: 480px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background-color: var(--surface);
+  overflow: hidden; /* 像素级平移的内容裁在框内 */
+  box-shadow: 0 20px 48px rgba(18, 35, 61, 0.24);
+  z-index: 30;
+  pointer-events: none; /* 不拦截鼠标，避免移动中闪烁 */
+  animation: lensIn 0.14s ease;
+}
+
+/* 放大内容：左上角锚定，宽高 = 原图自然尺寸 × ZOOM（JS 设 px），
+   平移量走 CSS 变量（--zx/--zy，JS 写入）。
+   ⚠️ 全局 reset 有 img { max-width: 100% }，会把这个绝对定位的 img 宽度
+   压回容器宽、高度不动 → 严重拉伸。这里必须显式 max-width:none 覆盖掉。 */
+.lensImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: var(--zw, 0px);
+  height: var(--zh, 0px);
+  max-width: none;
+  translate: var(--zx, 0px) var(--zy, 0px);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+@keyframes lensIn {
+  from {
+    opacity: 0;
+    transform: translateX(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 鼠标位置指示环：left/top 由 JS 写入（px 坐标，含 -36px 偏移） */
+.cursor {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 1.5px solid var(--ba-blue);
+  background: rgba(255, 255, 255, 0.24);
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* 触屏设备没有 hover，浮层与指示环都不该出现（双保险，JS 层也判断了） */
+@media (hover: none), (pointer: coarse) {
+  .lens,
+  .cursor {
+    display: none;
+  }
+}
+
+/* 详情页窄屏时主图独占一行，右侧空间可能不足 —— 改成浮在图上方 */
+@media (max-width: 860px) {
+  .lens {
+    left: 50%;
+    top: 16px;
+    transform: translateX(-50%);
+    width: min(320px, 88%);
+    height: min(420px, 60vh);
+    animation: lensInMobile 0.14s ease;
+  }
+
+  @keyframes lensInMobile {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) translateY(6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+  }
+}

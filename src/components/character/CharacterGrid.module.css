@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  gap: var(--sp-3);
+  grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(128px, 1fr));
+    gap: var(--sp-3);
+  }
+}
+
+/* grid 的 stretch 要穿透 AnimatePresence 的 motion.div 包裹层才能拉齐卡片 */
+.grid > div {
+  height: 100%;
+}

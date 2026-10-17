@@ -1,0 +1,124 @@
+/* ==========================================================================
+   全局基础样式：极简 reset + 排版 + 布局原语
+   碧蓝档案风格：干净无衬线、大留白、蓝色柔光
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* 常驻滚动条槽位：滚动条出现/消失（弹窗锁滚动、长短页切换）时
+   布局宽度不变，页面不会左右偏一下 */
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--ba-blue-600);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---- 焦点可见：绝不清成 outline:none，否则键盘不可用 ---- */
+:focus-visible {
+  outline: 3px solid var(--ba-blue);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* ---- 屏幕阅读器专用（图标按钮等需要文字标签时） ---- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---- 工具类 ---- */
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--sp-5);
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-inline: var(--sp-4);
+  }
+}
+
+/* 单行省略号（长日文名需要） */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 双行省略号 */
+.clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,0 +1,34 @@
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  padding-block: 0 var(--sp-4);
+}
+
+.text {
+  min-width: 0;
+}
+
+.title {
+  font-size: clamp(18px, 2.2vw, 22px);
+  letter-spacing: -0.01em;
+}
+
+.sub {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--ink-3);
+}
+
+.sub strong {
+  color: var(--ba-blue-600);
+  font-variant-numeric: tabular-nums;
+}
+
+.right {
+  flex: none;
+  font-size: 13px;
+  color: var(--ink-3);
+}

@@ -1,0 +1,46 @@
+/* 斜切的条幅：外层负责斜切与底色，内层反向斜切让文字保持水平 */
+.badge {
+  display: inline-block;
+  transform: skewX(-12deg);
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  background: var(--badge-bg, var(--ba-blue-100));
+  color: var(--badge-fg, var(--ba-blue-700));
+}
+
+.inner {
+  display: inline-block;
+  transform: skewX(12deg);
+}
+
+.blue {
+  --badge-bg: var(--ba-blue-100);
+  --badge-fg: var(--ba-blue-700);
+}
+
+.muted {
+  --badge-bg: #eef3f9;
+  --badge-fg: var(--ink-2);
+}
+
+/* 标签用的绿色：与「已拥有」一脉相承的正版/授权语义 */
+.green {
+  --badge-bg: var(--owned-bg);
+  --badge-fg: #0a7a56;
+}
+
+.own {
+  --badge-bg: var(--owned-bg);
+  --badge-fg: #0a7a56;
+}
+
+/* 角色主题色：用 color-mix 派生浅底深字，任何主题色都能保证可读 */
+.char {
+  --badge-bg: color-mix(in oklab, var(--badge-c, var(--ba-blue)) 18%, #fff);
+  --badge-fg: color-mix(in oklab, var(--badge-c, var(--ba-blue)) 62%, #0b2033);
+}

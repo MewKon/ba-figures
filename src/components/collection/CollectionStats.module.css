@@ -1,0 +1,116 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+  margin-bottom: var(--sp-6);
+}
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--sp-4);
+}
+
+.tile {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+  padding: var(--sp-2) 0;
+}
+
+.tileLabel {
+  width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ink-2);
+}
+
+.tileValue {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--ink);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+}
+
+.wide .tileValue {
+  color: var(--ba-blue-700);
+}
+
+.tileUnit {
+  font-size: 14px;
+  color: var(--ink-3);
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--sp-4);
+}
+
+.chart {
+  padding: var(--sp-5);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+}
+
+.chartTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ink-2);
+  letter-spacing: 0.04em;
+  margin-bottom: var(--sp-4);
+}
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 96px 1fr 28px;
+  align-items: center;
+  gap: var(--sp-3);
+  font-size: 13px;
+}
+
+.barLabel {
+  color: var(--ink-2);
+}
+
+.barTrack {
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--ba-blue-50);
+  overflow: hidden;
+}
+
+.barFill {
+  display: block;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(90deg, var(--ba-blue-400), var(--ba-blue));
+}
+
+.barCount {
+  text-align: right;
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 换算提示触发符：虚线下划线 + 可悬停 */
+.approx {
+  margin-right: 3px;
+  color: var(--ink-3);
+  font-weight: 600;
+  border-bottom: 1px dashed var(--ink-3);
+  cursor: help;
+}

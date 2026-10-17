@@ -1,0 +1,46 @@
+/* 外框：撑起 3/4 比例，img 与加载垫层都在里面叠放 */
+.frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: var(--ba-blue-50);
+}
+
+/* 加载垫层：绝对铺满，居中光环 + 文字；img 淡入后被盖住 */
+.loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  gap: 4px;
+  background: var(--ba-blue-50);
+  color: var(--ink-3);
+}
+
+.loadingText {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 纵向图超出 3/4 框时只截下方，保住头部/上半身（默认 center 会两头截） */
+  object-position: top;
+  /* 内联 opacity:0 → 1 的淡入（loaded 后）；已缓存时首帧就是 1，不闪 */
+  transition: opacity var(--dur-base) ease;
+}
+
+/* 详情页大图（large）：不锁 3/4 比例，按内容自适应 */
+.large.frame {
+  aspect-ratio: auto;
+}
+
+.large.frame .img {
+  height: auto;
+  max-height: 70vh;
+  object-fit: contain;
+}

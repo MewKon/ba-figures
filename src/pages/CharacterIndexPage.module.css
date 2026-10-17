@@ -1,0 +1,111 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-5);
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  min-width: 0;
+}
+
+.chip {
+  padding: 5px 12px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-2);
+  font-size: 12.5px;
+  font-weight: 600;
+  transition: background var(--dur-fast) ease, border-color var(--dur-fast) ease,
+    color var(--dur-fast) ease;
+}
+
+.chip:hover {
+  border-color: var(--ba-blue-200);
+  color: var(--ba-blue-600);
+}
+
+.chip.on {
+  background: var(--ba-blue);
+  border-color: var(--ba-blue);
+  color: #fff;
+}
+
+.switch {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  border-radius: var(--radius-pill);
+  background: var(--ba-blue-50);
+  flex: none;
+}
+
+/* 两组开关（范围 / 分组）并排，窄屏折行不挤压 */
+.switches {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+/* 汇总行是主页唯一的标题文字（h1「角色」已删）。
+   数字放大到比「位角色 / 件手办」更重：这才是这张页面真正想让人读到的信息。 */
+.summary {
+  font-size: 14px;
+  color: var(--ink-2);
+  line-height: 1.5;
+}
+
+.summary strong {
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--ba-blue-600);
+  /* 放大后基线会错位，用 0 让数字底边与文字对齐 */
+  vertical-align: 0;
+  line-height: 1;
+}
+
+.sw {
+  padding: 5px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+
+.sw.on {
+  background: var(--surface);
+  color: var(--ba-blue-700);
+  box-shadow: var(--shadow-sm);
+}
+
+.section {
+  margin-bottom: var(--sp-6);
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-2);
+  margin-bottom: var(--sp-3);
+  padding-bottom: var(--sp-2);
+  border-bottom: 1px dashed var(--line);
+}
+
+.sectionCount {
+  font-size: 11.5px;
+  padding: 1px 7px;
+  border-radius: var(--radius-pill);
+  background: var(--ba-blue-100);
+  color: var(--ba-blue-700);
+  font-variant-numeric: tabular-nums;
+}

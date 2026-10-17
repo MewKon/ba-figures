@@ -1,0 +1,55 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  padding: var(--sp-4);
+  background: rgba(18, 35, 61, 0.42);
+  backdrop-filter: blur(2px);
+}
+
+.box {
+  width: 100%;
+  max-width: 380px;
+  max-height: 86vh;
+  overflow: auto;
+  padding: var(--sp-5);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: 0 24px 60px rgba(18, 35, 61, 0.28);
+}
+
+/* 去掉聚焦时浏览器给 div 画的默认轮廓，改用内描边保持键盘可见性 */
+.box:focus {
+  outline: none;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.title {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.close {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ink-3);
+  font-size: 13px;
+}
+
+.close:hover {
+  background: var(--ba-blue-100);
+  color: var(--ba-blue-700);
+}

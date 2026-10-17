@@ -1,0 +1,221 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 440px) 1fr;
+  gap: var(--sp-6);
+  align-items: start;
+}
+
+.media {
+  position: relative;
+  border-radius: var(--radius);
+  /* 不裁切：放大镜浮层要伸出容器右侧；圆角裁切交给 .mediaClip */
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+/* 图片自身的圆角裁切（.media 不能 overflow:hidden，会裁掉放大浮层） */
+.mediaClip {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.info {
+  min-width: 0;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-4);
+}
+
+.name {
+  font-size: clamp(26px, 3.6vw, 36px);
+  letter-spacing: -0.02em;
+}
+
+.ja {
+  margin-top: var(--sp-1);
+  font-size: 16px;
+  color: var(--ink-2);
+}
+
+.en {
+  font-size: 13px;
+  color: var(--ink-3);
+  letter-spacing: 0.01em;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-4);
+  flex-wrap: wrap;
+  margin: var(--sp-5) 0;
+  padding: var(--sp-4) 0;
+  border-top: 1px dashed var(--line);
+  border-bottom: 1px dashed var(--line);
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--ba-blue-700);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+.release {
+  font-size: 14px;
+  color: var(--ink-2);
+}
+
+.approx {
+  margin-right: 3px;
+  color: var(--ink-3);
+  font-weight: 600;
+  /* HoverHint 的触发元素：虚线下划线提示可悬停 */
+  border-bottom: 1px dashed var(--ink-3);
+  cursor: help;
+}
+
+/* 发售批次标签页（初版 / 再版）：批次之间的定价、JAN、发售日会变 */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-5);
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-2);
+  text-align: left;
+  transition: background var(--dur-fast) ease, border-color var(--dur-fast) ease,
+    color var(--dur-fast) ease;
+}
+
+.tab:hover {
+  border-color: var(--ba-blue-200);
+  color: var(--ba-blue-600);
+}
+
+.tab.on {
+  background: var(--ba-blue);
+  border-color: var(--ba-blue);
+  color: #fff;
+}
+
+.tabName {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.tabDate {
+  font-size: 11.5px;
+  opacity: 0.78;
+  font-variant-numeric: tabular-nums;
+}
+
+.specs {
+  margin: var(--sp-5) 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--sp-1) var(--sp-5);
+}
+
+/* 随批次变化的规格：与上一组拉开一条分隔带 */
+.releaseSpecs {
+  margin-top: var(--sp-3);
+  padding-top: var(--sp-3);
+  border-top: 1px dashed var(--line);
+}
+
+.specRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-2) 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13.5px;
+}
+
+.specRow dt {
+  color: var(--ink-3);
+  flex: none;
+}
+
+.specRow dd {
+  margin: 0;
+  text-align: right;
+  font-weight: 600;
+  color: var(--ink);
+  word-break: break-all;
+}
+
+.notes {
+  margin-top: var(--sp-5);
+  padding: var(--sp-4);
+  border-radius: var(--radius-sm);
+  background: var(--ba-blue-50);
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+.official {
+  display: inline-block;
+  margin-top: var(--sp-5);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ---- 未找到 ---- */
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--sp-7) var(--sp-5);
+}
+
+.nfTitle {
+  margin-top: var(--sp-4);
+  font-size: 24px;
+}
+
+.nfHint {
+  margin-top: var(--sp-2);
+  color: var(--ink-2);
+}
+
+.backBtn {
+  margin-top: var(--sp-5);
+  padding: 10px 24px;
+  border-radius: var(--radius-pill);
+  background: var(--ba-blue);
+  color: #fff;
+  font-weight: 600;
+}
+
+.backBtn:hover {
+  background: var(--ba-blue-600);
+  text-decoration: none;
+}
+
+@media (max-width: 860px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: var(--sp-5);
+  }
+}

@@ -1,0 +1,61 @@
+/**
+ * 面包屑条：紧贴顶栏下方的一条细导航。
+ * 比顶栏矮、字号更小，视觉上从属于顶栏，不抢主标题。
+ */
+.bar {
+  position: sticky;
+  /* 顶栏 --nav-h 高且 sticky top:0，面包屑钉在它正下方一起吸顶 */
+  top: var(--nav-h);
+  z-index: 40;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  min-height: 36px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 12.5px;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.sep {
+  margin-inline: var(--sp-2);
+  color: var(--ink-3);
+  user-select: none;
+}
+
+.link {
+  color: var(--ink-2);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.link:hover {
+  color: var(--ba-blue-600);
+  text-decoration: none;
+}
+
+/* 末项 = 当前位置：不可点、压暗一档以示区别 */
+.current {
+  color: var(--ink-3);
+  max-width: 22ch;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

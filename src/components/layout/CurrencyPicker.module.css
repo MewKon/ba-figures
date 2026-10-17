@@ -1,0 +1,112 @@
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--line);
+  color: var(--ink-2);
+  font-size: 13px;
+  font-weight: 600;
+  transition: border-color var(--dur-fast) ease, background var(--dur-fast) ease,
+    color var(--dur-fast) ease;
+}
+
+.trigger:hover {
+  border-color: var(--ba-blue-200);
+  background: var(--ba-blue-50);
+  color: var(--ba-blue-600);
+}
+
+.symbol {
+  font-size: 13px;
+  color: var(--ba-blue-600);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 极窄屏只留符号，避免顶栏换行 */
+@media (max-width: 480px) {
+  .label {
+    display: none;
+  }
+}
+
+/* ---- 弹窗内容 ---- */
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  padding: 11px 12px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid transparent;
+  text-align: left;
+  transition: background var(--dur-fast) ease, border-color var(--dur-fast) ease;
+}
+
+.option:hover {
+  background: var(--ba-blue-50);
+}
+
+.option.on {
+  border-color: var(--ba-blue);
+  background: var(--ba-blue-50);
+}
+
+.optSymbol {
+  flex: none;
+  width: 44px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ba-blue-700);
+  font-variant-numeric: tabular-nums;
+}
+
+.optLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.optCode {
+  flex: 1;
+  font-size: 12px;
+  color: var(--ink-3);
+  letter-spacing: 0.04em;
+}
+
+.check {
+  flex: none;
+  color: var(--ba-blue);
+  font-weight: 700;
+}
+
+.note {
+  margin-top: var(--sp-4);
+  padding-top: var(--sp-3);
+  border-top: 1px dashed var(--line);
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--ink-2);
+}
+
+.note strong {
+  color: var(--ink);
+}
+
+.rate {
+  display: block;
+  margin-top: 6px;
+  color: var(--ink-3);
+  font-variant-numeric: tabular-nums;
+}

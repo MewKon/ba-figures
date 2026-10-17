@@ -1,0 +1,62 @@
+.wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.icon {
+  position: absolute;
+  left: 12px;
+  display: grid;
+  place-items: center;
+  color: var(--ink-3);
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  height: 36px;
+  /* 左让放大镜、右让清空按钮；原先右侧还要塞结果数，现已去掉 */
+  padding: 0 34px;
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius-pill);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  font-size: 13.5px;
+  transition: border-color var(--dur-base) ease, box-shadow var(--dur-base) ease;
+}
+
+.input::placeholder {
+  color: var(--ink-3);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--ba-blue);
+  box-shadow: 0 0 0 3px var(--ba-blue-100);
+}
+
+.input::-webkit-search-cancel-button {
+  appearance: none;
+}
+
+.clear {
+  position: absolute;
+  right: 10px;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ink-3);
+  font-size: 12px;
+}
+
+.clear:hover {
+  background: var(--ba-blue-100);
+  color: var(--ba-blue-700);
+}
+

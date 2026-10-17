@@ -1,0 +1,86 @@
+/* ---------- 卡片角标版 ---------- */
+
+.iconWrap {
+  position: absolute;
+  right: var(--sp-3);
+  bottom: var(--sp-3);
+  display: flex;
+  gap: var(--sp-2);
+  /* 常驻但半透明：触屏没有 hover，隐藏按钮会让人找不到；
+     hover / 键盘聚焦时提亮到全不透明 */
+  opacity: 0.72;
+  transition: opacity var(--dur-base) ease;
+}
+
+.iconWrap:hover,
+.iconWrap:focus-within {
+  opacity: 1;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink-2);
+  font-size: 15px;
+  box-shadow: var(--shadow-sm);
+  backdrop-filter: blur(4px);
+  transition: background var(--dur-fast) ease, color var(--dur-fast) ease;
+}
+
+.icon:hover {
+  background: #fff;
+  color: var(--ba-blue-600);
+}
+
+.icon.on {
+  background: var(--owned);
+  color: #fff;
+}
+
+/* ---------- 详情页整行版 ---------- */
+
+.pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  color: var(--ink-2);
+  font-weight: 600;
+  overflow: hidden;
+  transition:
+    border-color var(--dur-base) ease,
+    background var(--dur-base) ease,
+    color var(--dur-base) ease;
+}
+
+.pill:hover {
+  border-color: var(--ba-blue-200);
+  color: var(--ba-blue-600);
+}
+
+.pillIcon {
+  font-size: 15px;
+}
+
+.pill.on {
+  background: var(--owned-bg);
+  border-color: var(--owned);
+  color: #0a7a56;
+}
+
+/* 收藏成功时闪一下的扩散圈 */
+.flash {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(circle at 24px 50%, currentColor 0%, transparent 70%);
+  pointer-events: none;
+}
