@@ -35,7 +35,7 @@ npm run preview      # http://localhost:4173
 ## 技术栈
 
 Vite 8 · React 19 · TypeScript 5.9 · react-router-dom 7 · motion · CSS Modules + CSS 变量。
-无后端，页面侧数据全静态。
+无后端，页面侧数据全静态。页脚访问量由不蒜子提供。
 
 ## 数据
 

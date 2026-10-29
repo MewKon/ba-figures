@@ -2,6 +2,7 @@ import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { NavBar } from './NavBar';
 import { Breadcrumbs } from './Breadcrumbs';
+import { VisitCounter } from './VisitCounter';
 import styles from './AppLayout.module.css';
 
 export function AppLayout() {
@@ -30,6 +31,7 @@ export function AppLayout() {
       <footer className={styles.footer}>
         <div className="container">
           碧蓝档案手办收集 · <Link to="/about" className={styles.footerLink}>数据来源与关于</Link> · 图片版权归原厂商所有
+          <VisitCounter />
         </div>
       </footer>
     </div>
