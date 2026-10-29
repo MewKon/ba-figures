@@ -46,7 +46,7 @@ export interface FigureRelease {
 }
 
 export interface Figure {
-  /** slug：路由参数 + public/images/<id>.jpg 约定 */
+  /** 路由标识：<characterId>-<productType>-<序号>（同角色同类型按发售日编号） */
   id: string;
   /** 角色稳定标识（罗马字，如 'mika'）—— 主页按此分组 */
   characterId: string;

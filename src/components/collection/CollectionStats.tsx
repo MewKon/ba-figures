@@ -49,10 +49,10 @@ export function CollectionStats({ stats }: { stats: Stats }) {
       {(mfrBars.length > 0 || typeBars.length > 0) && (
         <div className={styles.charts}>
           {mfrBars.length > 0 && (
-            <BarChart title="按厂商" bars={mfrBars} reduce={!!reduce} />
+            <BarChart title="厂商" bars={mfrBars} reduce={!!reduce} />
           )}
           {typeBars.length > 0 && (
-            <BarChart title="按商品类型" bars={typeBars} reduce={!!reduce} />
+            <BarChart title="商品类型" bars={typeBars} reduce={!!reduce} />
           )}
         </div>
       )}
